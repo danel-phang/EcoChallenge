@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a 
+  <a>
     <img src="https://github.com/danel-phang/EcoChallenge/blob/main/data/logo.png" alt="EcoChallenge" height="96px" width="100px">
   </a>
   <br>
