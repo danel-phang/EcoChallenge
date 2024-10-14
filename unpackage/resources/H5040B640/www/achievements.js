@@ -79,15 +79,12 @@ document.addEventListener('DOMContentLoaded', function() {
 	let firstBackPressTime = null;
 	document.addEventListener('plusready', function() {
 	    plus.key.addEventListener('backbutton', function() {
-
-	            // 用户在首页按返回键
 	        if (!firstBackPressTime || (new Date().getTime() - firstBackPressTime > 2000)) {
 	            firstBackPressTime = new Date().getTime();
 	            plus.nativeUI.toast('再按一次退出应用');
 	        } else {
 	            plus.runtime.quit();
 	        }
-	        
 	    });
 	});
 	
