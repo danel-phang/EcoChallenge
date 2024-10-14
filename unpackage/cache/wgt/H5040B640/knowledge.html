@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环保知识库 - EcoChallenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>环保知识库</h1>
+            <button id="aiAssistant" class="icon-button">
+                <i data-feather="message-circle"></i>
+            </button>
+        </header>
+        <main>
+            <section class="knowledge-card">
+                <h2>环保小知识</h2>
+                <ul class="knowledge-list" id="knowledgeList">
+                    <!-- 知识点将通过JS动态加载 -->
+                </ul>
+            </section>
+            <section class="news-card">
+                <h2>最新环保新闻</h2>
+                <div id="loading" class="loading">加载中...</div>
+                <ul class="news-list" id="newsList"></ul>
+                <div class="pagination">
+                    <button id="prevPage">上一页</button>
+                    <span id="currentPage">1</span>
+                    <button id="nextPage">下一页</button>
+                </div>
+            </section>
+        </main>
+        <nav>
+            <ul>
+                <li id="navHome"><i data-feather="zap"></i></li>
+                <li id="navImpact"><i data-feather="bar-chart-2"></i></li>
+                <li id="navAchievements"><i data-feather="award"></i></li>
+                <li id="navKnowledge" class="active"><i data-feather="book"></i></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+    <script  src="knowledge.js"></script>
+</body>
+</html>
+

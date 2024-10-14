@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环保影响追踪 - EcoChallenge</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- 异步加载 feather-icons 和 Chart.js -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>环保影响追踪</h1>
+            <button id="aiAssistant" class="icon-button">
+                <i data-feather="message-circle"></i>
+            </button>
+        </header>
+        <main>
+            <section class="impact-summary-card">
+                <h2>总体环保影响</h2>
+                <div class="impact-stats">
+                    <div class="stat">
+                        <p class="stat-value" id="totalWaterSaved">0L</p>
+                        <p class="stat-label">节约水量</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat-value" id="totalCarbonReduced">0kg</p>
+                        <p class="stat-label">减少碳排放</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat-value" id="totalEnergySaved">0kWh</p>
+                        <p class="stat-label">节省电量</p>
+                    </div>
+                </div>
+            </section>
+            <section class="progress-card">
+                <h2>环保目标进度</h2>
+                <div class="progress-bar">
+                    <div class="progress-label">节水目标</div>
+                    <div class="progress-track">
+                        <div class="progress-fill" id="waterProgress" style="width: 0%;"></div>
+                    </div>
+                    <div class="progress-percentage" id="waterPercentage">0%</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-label">减碳目标</div>
+                    <div class="progress-track">
+                        <div class="progress-fill" id="carbonProgress" style="width: 0%;"></div>
+                    </div>
+                    <div class="progress-percentage" id="carbonPercentage">0%</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-label">节能目标</div>
+                    <div class="progress-track">
+                        <div class="progress-fill" id="energyProgress" style="width: 0%;"></div>
+                    </div>
+                    <div class="progress-percentage" id="energyPercentage">0%</div>
+                </div>
+            </section>
+            <section class="achievements-card">
+                <h2>环保成就</h2>
+                <div class="achievements-grid" id="achievementsGrid"></div>
+            </section>
+            <section class="trend-card">
+                <h2>环保贡献趋势</h2>
+                <canvas id="trendChart"></canvas>
+            </section>
+            <section class="task-history-card">
+                <h2>最近完成的任务</h2>
+                <ul class="task-list" id="taskList"></ul>
+            </section>
+        </main>
+        <nav>
+            <ul>
+                <li id="navHome"><i data-feather="zap"></i></li>
+                <li id="navImpact" class="active"><i data-feather="bar-chart-2"></i></li>
+                <li id="navAchievements"><i data-feather="award"></i></li>
+                <li id="navKnowledge"><i data-feather="book"></i></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- 优化后的主JS文件 -->
+    <script defer src="impact-tracking.js"></script>
+</body>
+</html>

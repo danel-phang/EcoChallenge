@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>环保成就 - EcoChallenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>环保成就</h1>
+            <button id="aiAssistant" class="icon-button">
+                <i data-feather="message-circle"></i>
+            </button>
+        </header>
+        <main>
+            <section class="achievements-card">
+                <h2>已获得的成就</h2>
+                <div class="achievements-grid" id="achievementsGrid">
+                    <!-- 成就将通过JS动态加载 -->
+                </div>
+            </section>
+            <section class="available-achievements-card">
+                <h2>可获取的成就</h2>
+                <div class="available-achievements-grid" id="availableAchievementsGrid">
+                    <!-- 可获取的成就将通过JS动态加载 -->
+                </div>
+            </section>
+        </main>
+        <nav>
+            <ul>
+                <li id="navHome"><i data-feather="zap"></i></li>
+                <li id="navImpact"><i data-feather="bar-chart-2"></i></li>
+                <li id="navAchievements" class="active"><i data-feather="award"></i></li>
+                <li id="navKnowledge"><i data-feather="book"></i></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="achievements.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+</body>
+</html>
