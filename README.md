@@ -1,8 +1,24 @@
-# EcoChallenge (环保挑战)
-### **一个绿色环保主题的纯Html前端模板**  
-### **A pure HTML front-end template with a green environmental protection theme**
+<h1 align="center">
+  <a href="https://apklab.surendrajat.xyz">
+    <img src="https://github.com/danel-phang/EcoChallenge/blob/main/data/logo.png" alt="EcoChallenge" height="96px" width="100px">
+  </a>
+  <br>
+  EcoChallenge
+</h1>
+
+
+<h4 align="center">
+一个绿色环保主题的纯Html前端模板
+</h4>
+
+<p align="center">
+A pure HTML front-end template with a green environmental protection theme
+</p>
+
+
+
+
 <div align="center">
-<img src="https://github.com/danel-phang/EcoChallenge/blob/main/data/logo.png"  width="15%" height="15%" alt="logo"/>
 </div>
 
 
